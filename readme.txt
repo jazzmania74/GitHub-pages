@@ -1,6 +1,8 @@
 나눔경영컨설팅 웹앱 포털
 =======================
 
+배포 URL: https://jazzmania74.github.io/GitHub-pages/index.html
+
 나눔경영컨설팅에서 개발한 AI 웹앱 도구들의 링크를 모아 놓은 포털 페이지입니다.
 
 주요 기능:
