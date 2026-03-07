@@ -209,6 +209,21 @@ body {
    앱 데이터 배열 — 새 앱 추가/삭제/수정 시 이 배열만 편집하세요
    ═══════════════════════════════════════════════════════════ */
 var APPS = [
+  // ── 개인 업무용 도구 (KJH-tools) ──
+  {
+    category: '개인 업무용 도구',
+    categoryIcon: '🔧',
+    categoryColor: '#F0FDF4',
+    items: [
+      { name: '새 교육일정 등록기', emoji: '📝', url: 'https://script.google.com/macros/s/AKfycbxaAroOaa6lKsXGohEbKphzdZVYklpTu_4QZPg0bp0nXZl5qTCLX8e2B9mlxZUTdTTFjA/exec', desc: 'AI 텍스트/이미지 분석으로 교육일정을 구글 캘린더에 빠르게 등록', tags: ['AI', 'Claude Haiku', 'Apps Script', '개인'] },
+      { name: 'AI SNS → 블로그 변환기', emoji: '📱', url: 'https://jazzmania74.github.io/SNS-to-blog/SNS-to-blog.html', desc: 'SNS 게시글을 네이버 블로그/티스토리 스타일로 변환', tags: ['AI', 'Claude Sonnet', '개인'] },
+      { name: 'AI 교육제안 메일 자동 생성기', emoji: '✉️', url: 'https://jazzmania74.github.io/Edu-mail-maker/Edu-mail-maker.html', desc: '스크린샷 OCR 분석 후 맞춤 교육과정 매칭 및 Gmail 메일 생성', tags: ['AI', 'Claude Sonnet', '개인'] },
+      { name: 'AI 교육 커리큘럼 생성기', emoji: '📚', url: 'https://jazzmania74.github.io/Curriculum-maker/Curriculum_maker.html', desc: '교육주제/교육생 입력 시 시간별 모듈 구성 커리큘럼 생성', tags: ['AI', 'Claude Haiku', '개인'] },
+      { name: '나눔컨설팅 마케팅 대시보드', emoji: '📊', url: 'https://jazzmania74.github.io/NanumCon-dashb/NanumCon-dashb.html', desc: 'GA4 기반 나눔경영컨설팅 웹사이트 트래픽 분석 및 인사이트 자동 생성', tags: ['Chart.js', 'GA4', '개인'] },
+      { name: '나눔캠퍼스 마케팅 대시보드', emoji: '🎓', url: 'https://jazzmania74.github.io/NanumCam-dashb/NanumCam-dashb.html', desc: 'GA4 기반 온라인 교육 플랫폼 트래픽 분석 및 인사이트 자동 생성', tags: ['Chart.js', 'GA4', '개인'] }
+    ]
+  },
+
   // ── B2B 세일즈 & 마케팅 AI 도구 ──
   {
     category: 'B2B 세일즈 & 마케팅 AI 도구',
@@ -246,21 +261,6 @@ var APPS = [
     categoryColor: '#FFF7ED',
     items: [
       { name: '바이오프로테크 영업 파이프라인', emoji: '🔬', url: 'https://jazzmania74.github.io/Customer-order/001.BPT_CRM_sales_pipeline/BPT_CRM_sales_pipeline.html', desc: '바이오프로테크 영업 파이프라인 관리 (Google Sheets 연동)', tags: ['고객사', 'Apps Script'] }
-    ]
-  },
-
-  // ── 개인 업무용 도구 (KJH-tools) ──
-  {
-    category: '개인 업무용 도구',
-    categoryIcon: '🔧',
-    categoryColor: '#F0FDF4',
-    items: [
-      { name: '새 교육일정 등록기', emoji: '📝', url: 'https://script.google.com/macros/s/AKfycbxaAroOaa6lKsXGohEbKphzdZVYklpTu_4QZPg0bp0nXZl5qTCLX8e2B9mlxZUTdTTFjA/exec', desc: 'AI 텍스트/이미지 분석으로 교육일정을 구글 캘린더에 빠르게 등록', tags: ['AI', 'Claude Haiku', 'Apps Script', '개인'] },
-      { name: 'AI SNS → 블로그 변환기', emoji: '📱', url: 'https://jazzmania74.github.io/SNS-to-blog/SNS-to-blog.html', desc: 'SNS 게시글을 네이버 블로그/티스토리 스타일로 변환', tags: ['AI', 'Claude Sonnet', '개인'] },
-      { name: 'AI 교육제안 메일 자동 생성기', emoji: '✉️', url: 'https://jazzmania74.github.io/Edu-mail-maker/Edu-mail-maker.html', desc: '스크린샷 OCR 분석 후 맞춤 교육과정 매칭 및 Gmail 메일 생성', tags: ['AI', 'Claude Sonnet', '개인'] },
-      { name: 'AI 교육 커리큘럼 생성기', emoji: '📚', url: 'https://jazzmania74.github.io/Curriculum-maker/Curriculum_maker.html', desc: '교육주제/교육생 입력 시 시간별 모듈 구성 커리큘럼 생성', tags: ['AI', 'Claude Haiku', '개인'] },
-      { name: '나눔컨설팅 마케팅 대시보드', emoji: '📊', url: 'https://jazzmania74.github.io/NanumCon-dashb/NanumCon-dashb.html', desc: 'GA4 기반 나눔경영컨설팅 웹사이트 트래픽 분석 및 인사이트 자동 생성', tags: ['Chart.js', 'GA4', '개인'] },
-      { name: '나눔캠퍼스 마케팅 대시보드', emoji: '🎓', url: 'https://jazzmania74.github.io/NanumCam-dashb/NanumCam-dashb.html', desc: 'GA4 기반 온라인 교육 플랫폼 트래픽 분석 및 인사이트 자동 생성', tags: ['Chart.js', 'GA4', '개인'] }
     ]
   }
 ];
