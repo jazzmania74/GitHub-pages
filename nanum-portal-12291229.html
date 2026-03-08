@@ -165,12 +165,6 @@ body {
 .card-tag.ai { background: #EBF5FF; color: var(--primary); }
 .card-tag.customer { background: #FFF7ED; color: #C2410C; }
 .card-tag.personal { background: #F0FDF4; color: #15803D; }
-.card-url {
-  font-size: 11px; color: var(--primary);
-  opacity: 0.6; white-space: nowrap;
-  overflow: hidden; text-overflow: ellipsis;
-}
-
 /* Updated date */
 .updated-info {
   text-align: center; padding: 20px;
@@ -356,8 +350,7 @@ function renderApps(filterCategory) {
             '<div class="card-desc">' + esc(app.desc) + '</div>' +
           '</div>' +
         '</div>' +
-        tagsHtml +
-        '<div class="card-url">' + esc(app.url) + '</div>';
+        tagsHtml;
 
       grid.appendChild(a);
     });
